@@ -1,25 +1,16 @@
 <?php
 
-// pe\ries papausdamas submit tu turi funkcija
-function square($x){
-    
-    return $x * $x;
-}
 
-//var_dump ($_POST);
-
-// paspaudi submit su name submitname
-if (isset($_POST['submitname'])){
+if (!empty($_POST)){
     
-    // gauni input su $_POST, kuri yra musu funkcijoje 'square',
-    // kuri pradziai pekelia skaiciu ir veliau priskiria atsakyma $skaicius kintamajam
-    $skaicius = square($_POST['skaicius']);
+    
+    $skaicius = $_POST['action'];
+    $skaicius++;
     
 } else {
-    // kol mes nepaspaudziam submit button $skaicius = ''
-    $skaicius = '';
-}
 
+    $skaicius = 0;
+}
 
 ?>
 <html>
@@ -27,11 +18,10 @@ if (isset($_POST['submitname'])){
         <title>links</title>
     </head>
     <body>
-        <form action="index.php" method="POST">
-            <span>Ka pakelti kvadratu:</span>
-            <input name="skaicius" type="text">            
-            <input name="submitname" type="submit">
+        <form method="POST">
+            <button name="action" value="<?php print $skaicius ; ?>"><?php print $skaicius; ?></button>
         </form>
-        <h1><?php print $skaicius; ?></h1>
+        
     </body>
 </html>
+
