@@ -1,70 +1,93 @@
-body {
-    background-color: rgba(2, 2, 2, 0.1);
+
+h1, h2 {
+    text-align: center;
+    padding-top: 1%;
 }
 
-section {
-    border-radius: 2%;
+#center {
     margin: 0 auto;
     text-align: center;
-    width: 30%;
-    padding-bottom: 2%;
-    margin-top: 1vh;
-    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: white;
-}
-
-.img1 {
-    width: 40%;
-    height: 10%;
-    margin-top: 5%;
-}
-
-.img2 {
-    width: 95%;
-    height: 40%;
-}
-
-.img3 {
-    width: 25%;
-    height: 25%;
-    object-fit: fill;
-}
-
-.nav {
-    font-size: 115%;
-    padding: 1.5%;
-    color: black;
-    text-decoration: none;
-}
-
-#apie_mus, #produktai, #kontaktai {
-    padding-top: 5%;
-    margin-top: 0%;
+    border: 1px solid blue;
+    width: 50%;
 }
 
 .text {
-    padding: 0 3%;
-    text-align: justify;
+    padding-top: 4%;
 }
 
-h1 {
-    font-size: 175%;
+#left {
+    border: 1px solid black;
 }
 
-li {
-    text-align: left;
-}
-
-.img4{
-    width: 95%;
-    height: 400px;
-    object-fit: fill;
-}
-
-footer {
+#middle {
     text-align: center;
-    font-size: 115%;
-    padding: 1%;
-    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: 1px solid black;
 }
 
+#right {
+    text-align: right;
+    border: 1px solid black;
+}
+
+#red {
+    border: 1px solid red;
+    margin: 0;
+}
+
+.red1 {
+    background-color: red;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.red2 {
+    background-color: red;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.red3 {
+    background-color: red;
+    padding: 3% 0;
+    margin: 1% 0;
+    border: 1px solid black;
+    margin-right: 93%;
+}
+
+.blue1 {
+    background-color: blue;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.blue {
+    background-color: blue;
+    padding: 1%;
+}
+
+.green {
+    background-color: green;
+    padding: 2% 2% 2% 1%;
+    font-size: 20px;
+}
+
+.brd img {
+    border: 1px solid black;
+    margin: 0 1%;
+}
+
+.algn1 {
+    font-size: 24px;
+    padding: 0 10%;
+    margin-left: 1%;
+    border: 1px solid black;
+}
+.algn {
+    padding: 0 5%;
+    margin: 0 3%;
+    font-size: 24px;
+    border: 1px solid black;
+}
