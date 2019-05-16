@@ -10,7 +10,7 @@
     <div>
         <img src="images/iki.png" alt="logo">
         <nav>
-            <a href="#apie">Apie mus</a>
+            <a href="index.php">Apie mus</a>
             <a href="susisiek.php">Susisiek</a>
         </nav>
     </div>

@@ -1,23 +1,27 @@
-.bg {
+body {
     background: url("https://madeinvilnius.lt/wp-content/uploads/2017/05/bananas-698608_1280.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    /*background-size: 100% 100%;*/
-    padding: 20px;
+    /*padding: 1% 0;*/
 }
 
 .bg2 {
     background-color: white;
-    padding: 20px;
+    padding: 1%;
     border-radius: 10px;
+}
 
+footer {
+    padding: 1% 0;
+    margin-top: 1%;
+    background-color: white;
+    text-align: center;
 }
 
 div {
     width: 50%;
     margin: 0 auto;
-
 }
 
 nav {
@@ -28,7 +32,7 @@ nav {
     width: 350px;
     height: 250px;
     float: left;
-    padding-right: 10px;
+    padding: 0 10px 10px 0;
 }
 
 header div {
@@ -52,26 +56,22 @@ header div img {
     height: 70px;
 }
 
-footer {
-    padding-top: 1%;
-    text-align: center;
+header {
+    margin: 0 0 1% 0;
+    background-color: white;
 }
 
 span {
     color: green;
 }
 
-button{
+button {
     margin-top: 4%;
     margin-bottom: 5%;
     padding: 1% 15%;
     color: white;
     background-color: green;
-}
-
-input:focus, textarea:focus {
     border: none;
-
 }
 
 input {
@@ -79,12 +79,10 @@ input {
     color: darkgrey;
     padding: 1% 1%;
     margin-bottom: 1%;
-
 }
 
 textarea {
     padding: 1% 1%;
-
     width: 100%;
     max-width: 100%;
     min-width: 100%;
@@ -99,6 +97,7 @@ table, th, td, tr {
     text-align: center;
     border: 1px solid #ccced1;
     border-collapse: collapse;
+
 }
 
 table {
