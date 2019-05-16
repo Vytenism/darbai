@@ -6,22 +6,58 @@
     <meta charset="UTF-8">
 </head>
 <body>
-<section>
+<header>
     <div>
-        <h1>
-            Contact Us!
+        <img src="images/iki.png" alt="logo">
+        <nav>
+            <a href="#apie">Apie mus</a>
+            <a href="susisiek.php">Susisiek</a>
+        </nav>
+    </div>
+</header>
+<section class="bg">
+    <div class="bg2">
+        <h1 id="apie">
+            Apie mus
         </h1>
-        <form>
-            <label for="nm">Name:</label>
-            <input type="text" value="Petras" id="nm">
-            <label for="nm2">Email:</label>
-            <input type="email" value="petras@petras.lt" id="nm2">
-            <label for="nm3">Reference Number:</label>
-            <input type="number" value="12213" id="nm3">
-            <textarea placeholder="Your message goes here..."></textarea>
-            <button>Send!</button>
-        </form>
+        <img class="img1" src="images/iki.jpg" alt="logo">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci asperiores atque, blanditiis dicta dolor
+            dolores eligendi explicabo facere ipsa labore magni minus molestiae natus neque nobis possimus provident?
+            Modi, rerum!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur impedit ipsa iste officia quo
+            repudiandae, sint tempore? Aspernatur eum laborum non repudiandae tempore! Blanditiis dicta laborum nemo
+            voluptatem voluptates.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad at cum dignissimos dolorem et
+            exercitationem iste libero, mollitia natus non obcaecati perferendis reiciendis rem saepe sapiente, sint
+            voluptatem!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci asperiores atque, blanditiis dicta dolor
+            dolores eligendi explicabo facere ipsa labore magni minus molestiae natus neque nobis possimus provident?
+            Modi, rerum!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur impedit ipsa iste officia quo
+            repudiandae, sint tempore? Aspernatur eum laborum non repudiandae tempore! Blanditiis dicta laborum nemo
+            voluptatem voluptates.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad at cum dignissimos dolorem et
+            exercitationem iste libero, mollitia natus non obcaecati perferendis reiciendis rem saepe sapiente, sint
+            voluptatem!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci asperiores atque, blanditiis dicta dolor
+            dolores eligendi explicabo facere ipsa labore magni minus molestiae natus neque nobis possimus provident?
+            Modi, rerum!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur impedit ipsa iste officia quo
+            repudiandae, sint tempore? Aspernatur eum laborum non repudiandae tempore! Blanditiis dicta laborum nemo
+            voluptatem voluptates.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad at cum dignissimos dolorem et
+            exercitationem iste libero, mollitia natus non obcaecati perferendis reiciendis rem saepe sapiente, sint
+            voluptatem!
+        </p>
     </div>
 </section>
+<footer>
+    Copyright © Petras Slekys 2019. All rights reserved.
+</footer>
 </body>
 </html>

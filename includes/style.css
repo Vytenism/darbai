@@ -1,64 +1,106 @@
-body {
-    background: url("https://cdn.pixabay.com/photo/2018/06/16/16/17/road-3478977__340.jpg");
-    background-size: cover;
+.bg {
+    background: url("https://madeinvilnius.lt/wp-content/uploads/2017/05/bananas-698608_1280.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
+    /*background-size: 100% 100%;*/
+    padding: 20px;
 }
 
-section {
+.bg2 {
     background-color: white;
-    margin: 100px auto;
-    width: 50%;
-}
+    padding: 20px;
+    border-radius: 10px;
 
-h1 {
-    padding-top: 10%;
-    text-align: center;
-    font-size: 3em;
 }
 
 div {
-    width: 90%;
+    width: 50%;
     margin: 0 auto;
+
+}
+
+nav {
+    text-align: right;
+}
+
+.img1 {
+    width: 350px;
+    height: 250px;
+    float: left;
+    padding-right: 10px;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p {
+    text-align: justify;
+}
+
+nav a {
+    padding-left: 2em;
+    color: black;
+    font-size: 1.3em;
+}
+
+header div img {
+    width: 70px;
+    height: 70px;
+}
+
+footer {
+    padding-top: 1%;
+    text-align: center;
+}
+
+span {
+    color: green;
 }
 
 button{
     margin-top: 4%;
-    margin-bottom: 10%;
-    padding: 1% 10%;
+    margin-bottom: 5%;
+    padding: 1% 15%;
     color: white;
-    background-color: #27282b;
-    font-size: 2em;
+    background-color: green;
 }
 
 input:focus, textarea:focus {
     border: none;
-    outline: none;
-    border-bottom: 1px solid blue;
-}
 
-label {
-    font-size: 2em;
 }
 
 input {
     width: 100%;
     color: darkgrey;
-    border: none;
-    border-bottom: 1px solid black;
-    margin-top: 1%;
-    margin-bottom: 4%;
-    font-size: 2em;
-    padding-bottom: 1%;
+    padding: 1% 1%;
+    margin-bottom: 1%;
+
 }
 
 textarea {
-    margin-top: 1%;
+    padding: 1% 1%;
+
     width: 100%;
-    border: none;
-    border-bottom: 1px solid black;
-    font-size: 2em;
     max-width: 100%;
     min-width: 100%;
 }
 
+td:first-child{
+    color: green;
+    font-weight: bold;
+}
+
+table, th, td, tr {
+    text-align: center;
+    border: 1px solid #ccced1;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+}
