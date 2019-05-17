@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Susisiek</title>
+    <title>Contacts</title>
     <link rel="stylesheet" href="includes/normalise.css"/>
     <link rel="stylesheet" href="includes/style.css"/>
     <meta charset="UTF-8">
@@ -8,48 +8,51 @@
 <body>
 <header>
     <div>
-        <img src="images/iki.png" alt="logo">
+        <img id="imga" src="images/silver.png" alt="logo">
         <nav>
-            <a href="index.php">Apie mus</a>
-            <a href="susisiek.php">Susisiek</a>
+            <a href="index.php">About</a>
+            <a href="susisiek.php">Contacts</a>
         </nav>
     </div>
 </header>
-<section class="bg">
-    <div class="bg2">
-        <h1>
-            Susisiekite su mūsų <span>komanda!</span>
-        </h1>
+<main>
+    <section class="flexc">
+        <h2>
+            Our Contacts
+        </h2>
+        <aside>
+            <ul id="list">
+                <li>
+                    +37067574401
+                </li>
+                <li>
+                    Mail@email.lt
+                </li>
+                <li>
+                    Vilnius, Lithuania
+                </li>
+            </ul>
+        </aside>
+        <p>
+            We strive for perfection and wish to provide the highest quality services. If there is any reason you wish
+            to contact us, leave a message below.
+        </p>
         <form>
-            <label for="nm">Vardas:</label>
-            <input type="text" value="Petras" id="nm">
-            <label for="nm2">El. paštas:</label>
-            <input type="email" value="email@email.lt" id="nm2">
-            <label for="nm3">Iki kortelės numeris:</label>
-            <input type="number" value="12345678" id="nm3">
-            <label>Žinutė:</label>
-            <textarea placeholder="Jūsų laiškas mums..."></textarea>
-            <button>Send!</button>
+            <label for="#input1">Name</label>
+            <input id="#input1" type="text">
+            <label for="#input2">Email</label>
+            <input id="input2" type="email">
+            <label for="#txtare">Message</label>
+            <textarea id="txtare">Send me a message...</textarea>
         </form>
-        <table>
-            <tr>
-                <th>Vardas</th>
-                <th>Pareigos</th>
-                <th>Telefonas</th>
-            </tr>
-            <tr>
-                <td>Vidmantas</td>
-                <td>Direktorius</td>
-                <td>+37067574401</td>
-            </tr>
-            <tr>
-                <td>Nijolė</td>
-                <td>Administratorė</td>
-                <td>+37067574401</td>
-            </tr>
-        </table>
-    </div>
-</section>
+        <button>Send!</button>
+    </section>
+    <section class="flexd">
+        <div>
+            <img src="images/TA.jpg" alt="logo">
+        </div>
+    </section>
+</main>
 <footer>
     Copyright © Petras Slekys 2019. All rights reserved.
 </footer>
