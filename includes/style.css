@@ -1,122 +1,127 @@
-footer {
-    padding: 1% 0;
-    margin-top: 1%;
-    background-color: #e3e7ed;
-    text-align: center;
+.ops p:first-child {
+    color: red;
+    font-family: Arial;
 }
 
-main {
-    padding-top: 1%;
-    width: 50%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    text-align: justify;
-}
-
-#list {
-    list-style-type: none;
-    padding: 0;
+.ops p:nth-child(2) {
     color: blue;
+    font-family: Arial;
 }
 
-input {
-    width: 100%;
-    margin-bottom: 2%;
+.ops p:last-child {
+    color: green;
+    font-family: Arial;
 }
 
-textarea {
-    width: 100%;
-    resize: none;
+footer p:first-child {
+    background-color: red;
+    font-family: "Comic Sans";
 }
 
-h2::before {
-    content: "\269d";
+footer p:nth-child(2) {
+    background-color: blue;
+    font-family: "Comic Sans";
 }
 
-
-main section {
-    padding: 1% 1%;
+footer p:last-child {
+    background-color: green;
+    font-family: "Comic Sans";
 }
 
-#imgb {
-    width: 50%;
-    height: 20%;
-    float: left;
-    padding-right: 3%;
-    padding-bottom: 6%;
+.head {
+    background-color: #f9bbe4;
 }
 
-header div {
+.head div {
     width: 50%;
     margin: 0 auto;
-    padding: 1% 0;
-    background-color: #adcc14;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav a {
-    padding-right: 1.2em;
-    color: black;
-    font-size: 1.1em;
-    text-decoration: none;
+.imga {
+    width: 100px;
 }
 
-#imga {
-    width: 15%;
-    height: 15%;
-    float: left;
-    padding-right: 1%;
+.navi a:not(:last-child) {
+    padding-right: 10px;
+    color: red;
 }
 
-main section p:last-child {
-    padding: 1%;
-}
-main section a {
-    color: white;
-    padding: 3%;
-    text-decoration: none;
-    background-color: #adcc14;
+.container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-main section div img {
-    width: 100%;
-    height: 50%;
+.container article {
+    width: 48%;
+    margin: 1%;
+    border: 1px solid black;
+    box-sizing: border-box;
 }
 
-main section div {
-    text-align: right;
+/*sekantis page home*/
+
+body {
+    background-color: #1BBC9B;
+    font-family: Arial;
 }
 
-.flexa, .flexc {
-    flex: 2;
+header div {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #B9B9B9;
+
 }
 
-.flexb, .flexd {
-    flex: 3;
+header {
+    background-color: #F7F7F7;
 }
 
-aside li:nth-child(1):before {
-    content: "\260f";
-    color: black;
+nav a:not(:last-child) {
+    padding-right: 15px;
 }
 
-aside li:nth-child(2):before {
-    content: "\2709;";
-    color: black;
+main {
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
 }
 
-aside li:nth-child(3):before {
-    content: "\2656";
-    color: black;
+main h1, main h2 {
+    text-align: center;
+    color: #fff;
 }
 
+main img {
+    border-radius: 50%;
+}
+
+section {
+    background-color: #484E5E;
+    text-align: center;
+    color: #fff;
+    padding: 2% 0;
+}
 
 button {
-    background-color: #adcc14;
-    color: white;
-    padding: 4%;
+    background-color: white;
+    color: #ADADAF;
+    border-radius: 5px;
     border: none;
+    padding: 10px;
+}
+
+button:before {
+    content: "\1F50D";
+}
+
+section p {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 1% ;
 }
