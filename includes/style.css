@@ -1,124 +1,38 @@
-/*Info apie Hraley*/
-
-* {
-    font-family: 'fjalla One', sens-serif;
+form {
+    background-color: #C5E1A5;
 }
 
-header, main {
-    background-color: black;
+input {
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.wraper {
-    max-width: 700px;
+textarea {
+    width: 100%;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+section div {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     margin: 0 auto;
 }
 
-.flx {
+main {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
-.flx2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+img {
+    max-width: 80%;
 }
-
-.flx3 {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.imga {
-    padding: 0 1em;
-    width: auto;
-    height: 10vh;
-}
-
-.p-size {
-    padding: 0 1em;
-    color: white;
-    font-size: 1.8em;
-}
-
-/*Navigacija*/
-
 .bg {
-    background-color: #323232;
-}
-
-.navi a {
-    text-decoration: none;
-    color: white;
-    padding: 0 1em;
-}
-
-.navi {
-    text-align: center;
-    padding: 1em 0;
-}
-
-.scroll {
-    position: sticky;
-    top: 0;
-}
-
-/*main 1st sekcija*/
-
-.bg2 {
-    background-image: url("../images/harley.jpg");
-    min-height: 60vh;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.borders p:not(:last-child) {
-    text-indent: 30px;
-}
-
-.borders p:last-child {
-    text-align: center;
-}
-
-.borders {
-    background-color: rgba(255,255,255,0.7);
-    width: 62%;
-    padding: 5vh;
-}
-
-/*main 2nd section*/
-
-.hrly {
-    max-width: 100%;
-    width: 200px;
-    height: auto;
-}
-
-.borders2 {
     background-color: darkgrey;
-    border-radius: 5%;
-    margin: 2em;
-    padding: 10px;
-    font-size: 0.9em;
-    text-align: justify;
-    width: 50vh;
-    max-width: 300px;
-
-}
-main section div div{
     text-align: center;
 }
-/*footer*/
 
-footer {
-    background-color: #323232;
-    padding: 1em 0;
-    color: white;
-    text-align: center;
+section {
+    border: 1px solid blue;
+    flex: 1;
 }
