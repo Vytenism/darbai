@@ -1,139 +1,23 @@
-header {
-    text-align: center;
+.container {
+    width: 1000px;
+    margin: 0 auto;
 }
-
-header img {
-    width: 100px;
-    margin: 20px 0 25px 0;
-}
-
-nav a {
-    display: block;
-    font-size: 2em;
-    text-decoration: none;
-    color: black;
-    margin: 10px 0;
-}
-
-#home {
-    background-image: url("https://i.pinimg.com/originals/95/ee/86/95ee8696f8ed1abb3767928c4d0daf65.jpg");
-    background-size: cover;
-    background-position: center;
-    min-height: 250px;
-    text-align: center;
-    padding: 40px 10px;
-}
-
-span, #home div a {
-    color: #fff;
-    background-color: black;
-    padding: 15px;
-}
-
-#home div a {
+table {
+    width: 100%;
     margin-top: 50px;
-    display: inline-block;
 }
-
-#about {
-    background-image: url("https://images7.alphacoders.com/448/448018.jpg");
-    background-size: cover;
-    background-position: center;
-    min-height: 250px;
-    padding: 40px 10px;
-}
-
-#about p, #services p {
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
+table, tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
     padding: 10px;
 }
-
-#services {
-    background-image: url("https://wallpaperplay.com/walls/full/e/0/a/54074.jpg");
-    background-size: cover;
-    background-position: center;
-    min-height: 250px;
-    padding: 40px 10px;
-}
-
-#services h1 {
-    text-align: right;
-}
-
-#contacts {
-     background: url("../images/taxi.jpg");
-    background-size: cover;
-    background-position: center;
-    min-height: 250px;
-    padding: 40px 10px;
- }
-
-#contacts h1 span {
-    background-color: rgba(20, 20, 20, 0.5);
-    color: white;
-    padding: 10px;
-}
-
-#contacts h1 {
-    text-align: center;
-    padding-top: 20px;
-    margin: 0;
-}
-
-#contacts p {
-    background-color: rgba(20, 20, 20, 0.5);
-    padding: 15px;
-
-}
-
-ol {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 25px;
-
-}
-
-footer{
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 4vh 0;
-    font-size: 0.8em;
-}
-
-footer a {
-    color: white;
-}
-
-@media only screen and (min-width: 850px) {
-    .content {
-        max-width: 1050px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+@media only screen and (max-width: 700px) {
+    .container {
+        max-width: 700px;
     }
-
-    .content nav a {
-        display: inline;
-        margin-left: 20px;
-        font-size: 1em;
-        height: 50px;
-    }
-
-    .content nav a:first-child{
-        margin-left: 0;
-    }
-
-    nav a:hover {
-        text-decoration: underline;
-        font-size: 1em;
-        color: red;
-    }
-
-    .content-section {
-        max-width: 1050px;
-        margin: 0 auto;
+    input {
+        width: 100%;
+        margin-bottom: 20px;
+        box-sizing: border-box;
     }
 }

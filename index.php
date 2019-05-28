@@ -1,83 +1,87 @@
-<html>
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+$konsultacija = '';
+$paskaita = '';
+
+
+if (isset($_POST['submit'])) {
+    $vardas = $_POST['name'];
+    $pavarde = $_POST['lname'];
+    $kalendorius = $_POST['date'];
+
+    if (!isset($_POST['konsultacijos'])) {
+        $konsultacija = 'Nebuvo';
+    } else {
+        $konsultacija = 'Buvo';
+    }
+
+    if (!isset($_POST['paskaitos'])) {
+        $paskaita = 'Nebuvo';
+    } else {
+        $paskaita = 'Buvo';
+    }
+
+} else {
+    $vardas = 'Nepateikta';
+    $pavarde = 'Nepateikta';
+    $kalendorius = 'Nepateikta';
+
+}
+//DUOMENU IRASYMAS I .TXT FAILA
+if  (isset($_POST['submit'])) {
+    //    SUKURIAMAS KINTAMASIS APJUNGIANTIS VISUS POST LAUKELIUS
+    $data = $_POST['name'] . $_POST['lname'] . $_POST['date'] . $_POST['konsultacijos'] . $_POST['paskaitos'];
+    //    NURODOMA .TXT FAILO VIETA IR KAS BUS JAME DAROMA
+    $fp = fopen('info.txt', 'a');
+    //    IRASOMI DUOMENYS I NURODYTA .TXT FAILA
+    fwrite($fp, $data);
+    //    UZDAROMAS FAILAS
+    fclose($fp);
+}
+
+?>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="includes/normalise.css">
-    <link rel="stylesheet" href="includes/style.css">
-    <title>Responsive</title>
+    <title>Klases lankomumas</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="includes/style.css">
 </head>
 <body>
-<header>
-    <div class="content">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2000px-Microsoft_logo_%282012%29.svg.png"
-             alt="logo">
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About Us</a>
-            <a href="#services">Services</a>
-            <a href="#contacts">Contacts</a>
-        </nav>
-    </div>
-</header>
-<main>
-    <section id="home">
-        <div class="content-section">
-            <h1><span>Hello</span></h1>
-            <div>
-                <a href="#">Find out more about us!</a>
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <div class="content-section">
-            <h1><span>About Us</span></h1>
-            <p>
-                Sed auctor diam neque, ut blandit nisi accumsan eget. Nullam finibus commodo risus, vel auctor urna
-                tincidunt
-                eu. Integer sollicitudin lectus eget nisi sagittis, et blandit nisl consectetur. Nunc ultricies velit
-                non
-                auctor euismod. Fusce iaculis id felis ac blandit. Suspendisse sit amet finibus nisi, in ullamcorper
-                justo.
-                Sed efficitur lectus ac mattis bibendum. Aliquam accumsan nulla id nunc facilisis rhoncus. Sed vulputate
-                nulla vitae tincidunt feugiat. Morbi at rutrum velit, et congue massa.
-            </p>
-        </div>
-    </section>
-    <section id="services">
-        <div class="content-section">
-            <h1><span>Services</span></h1>
-            <p>
-                Pellentesque viverra, risus et posuere faucibus, eros neque scelerisque lacus, vitae tempus purus dolor
-                in
-                turpis. Fusce varius consectetur commodo. Proin sem nisi, posuere non lobortis cursus, dignissim in
-                diam.
-                Nunc ipsum magna, lacinia ac purus a, facilisis sollicitudin turpis. Pellentesque hendrerit justo ex,
-                quis
-                lacinia diam sollicitudin sed. Integer tempus dolor non commodo maximus. Pellentesque ut orci
-                pellentesque
-                lacus rutrum convallis. Ut rhoncus mi tortor, et malesuada quam hendrerit et. Vivamus a diam augue.
-                Quisque
-                id sollicitudin nibh. Nam eleifend sollicitudin ipsum, ut egestas tellus laoreet et. Phasellus vel felis
-                mollis, luctus orci eu, placerat eros. Nam gravida tellus id ligula interdum scelerisque. Quisque lacus
-                lorem, semper sed orci a, dapibus lobortis sem.
-            </p>
-        </div>
-    </section>
-    <section id="contacts">
-        <div class="content-section">
-            <h1>
-                <span>Contacts</span>
-            </h1>
-            <ol>
-                <li>+370675754401</li>
-                <li>Email@email.com</li>
-                <li>CodeAcademy, Vilnius</li>
-            </ol>
-        </div>
-    </section>
-</main>
-<footer>
-    Copyright © Microsoft 2018. All rights reserved. <a href="#">Go UP!</a>
-</footer>
+
+<form method="POST">
+    <label for="name">Name:</label>
+    <input type="text" name="name">
+    <label for="lname">Last name:</label>
+    <input type="text" name="lname">
+    <label for="date">Date:</label>
+    <input type="date" name="date">
+    <label for="kons">Kons:</label>
+    <input type="checkbox" name="konsultacijos">
+    <label for="pask">Pask:</label>
+    <input type="checkbox" name="paskaitos">
+    <input type="submit" value="Submit" name="submit">
+</form>
+
+<table>
+    <tr>
+        <th>Name:</th>
+        <th>Last name:</th>
+        <th>Date:</th>
+        <th>Kons:</th>
+        <th>Pask:</th>
+    </tr>
+    <tr>
+        <td><?php print $vardas; ?></td>
+        <td><?php print $pavarde; ?></td>
+        <td><?php print $kalendorius; ?></td>
+        <td><?php print $konsultacija; ?></td>
+        <td><?php print $paskaita; ?></td>
+    </tr>
+</table>
+
 </body>
 </html>
