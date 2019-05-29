@@ -1,0 +1,34 @@
+/*header section*/
+header {
+    text-align: center;
+}
+.background {
+    background-color: #8d76fc;
+}
+
+.background nav img {
+    width: 26vh;
+    height: 13vh;
+}
+
+.background nav a {
+    display: block;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+}
+.background nav a:not(:last-child){
+    padding-bottom: 10px;
+}
+/*.border {*/
+/*    border-bottom: 1px solid white;*/
+/*}*/
+
+.border h1 {
+    color: white;
+}
+
+main .background {
+    padding: 20px 20px;
+    min-height: 250px;
+}
