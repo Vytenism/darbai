@@ -58,6 +58,24 @@
             for(var a = 0; a < elemente.length; a++){
                 elemente[a].style.color = "white";
             }    
+            var elemente = document.getElementsByClassName('white');
+            for(var a = 0; a < elemente.length; a++){
+                // elemente[a].style.color = "white";
+                if (elemente[a].style.color == "white"){
+                    elemente[a].style.color = "green";
+                }else {
+                    elemente[a].style.color = "white";
+                    }
+            }    
+            var elementd = document.getElementsByClassName('green');
+            for(var a = 0; a < elementd.length; a++){
+                // elementd[a].style.backgroundColor = "green";
+                if (elementd[a].style.backgroundColor == "green"){
+                    elementd[a].style.backgroundColor == "white";
+                }else {
+                    elementd[a].style.backgroundColor == "green";
+                    }
+            }
             var elementc = document.getElementsByClassName('borde');
             for(var a = 0; a < elementc.length; a++){
                 elementc[a].style.border = "1px solid grey";
