@@ -1,264 +1,102 @@
-
-/*header section Navigation bar*/
+        /* Fonts */
 
 * {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-.background {
-    background: #7d74b0;
+        /* Header going to form */
+
+body {
+    background: url(../images/background.jpg);
+    background-size: cover;
+    padding: 20vh;
+}
+
+
+        /* Configuaration for text */
+
+h1, p {
     color: white;
-}
-
-.center {
     text-align: center;
 }
 
-.background nav a {
-    display: block;
-    font-size: 1.5em;
-    text-decoration: none;
-    color: white;
-    padding-bottom: 10px;
+span {
+    border-bottom: 3px solid white; 
 }
 
-/*!*background odd and even colors */
-
-.background2:nth-child(odd) {
-    background: #2e3450;
-    color: white;
-}
-
-.background2:nth-child(even) {
-    background: #2a2f4a;
-    color: white;
-}
-
-/*borderiai*/
-
-.border {
-    border-bottom: 1px solid white;
-    padding-bottom: 15px;
-}
-
-.border2 {
-    border-bottom: 1px solid white;
-    display: inline-block;
-    padding-right: 15px;
-}
-
-/*All imgaes*/
-
-.imga {
-    width: 78vh;
-}
-
-.imgb{
-    background-image: url("https://cdn.pixabay.com/photo/2017/11/06/20/09/abstract-2924732_960_720.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 35vh;
-    max-height: 50vh;
-}
-
-/*Pull off from sides*/
-
-.retract2 {
-    padding: 40px 40px;
-}
-
-.retract{
-    padding: 40px 20px;
-}
-
-/*Form about adding an employee*/
+        /* Configuration for Form */
 
 form {
-    margin: 0;
+    padding: 5vh;
+    background: green;
+    margin: 0 auto;
 }
 
-.inputconfig {
-    background: #2e3450;
-    width: 100%;
-    padding: 15px 20px;
+label, input {
+    color: white;
+}
+
+input, textarea {
     border: none;
-    margin-bottom: 5vh;
-    box-sizing: border-box;
+    width: 100%;
+    border-radius: 5vh; 
+    margin-top: 2vh;
+    margin-bottom: 5vh;  
+    padding: 2vh;
 }
 
-label {
-    text-transform: uppercase;
+.bot {
+    background: green;
+    border: 1px solid white;
+    padding: 3vh 0;
+    margin-bottom: 15vh;
+    text-align: center;
+    outline: none;
 }
 
 textarea {
-    background: #2e3450;
-    width: 100%;
-    padding: 15px 20px;
-    margin-bottom: 5vh;
+    min-height: 20vh;
+    max-height: 30vh;
+    resize: vertical; 
     border: none;
-    max-width: 100%;
-    min-width: 100%;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
-button {
-    background: #2a2f4a;
-    padding: 20px;
-    color: white;
-    border: none;
-    border: 2px solid white;
-}
-
-.bottun2 {
-    background: none;
-    border: 2px solid white;
-    text-transform: uppercase;
-    color: white;
-    padding: 1em;
-    cursor: pointer;
-}
-
-section form div h2 {
-    font-size: 1.5em;
-}
-/*table to add employees*/
-
-table, tr, td, th {
-    padding: 2vh;
-    border-collapse: collapse;
-    color: white;
-}
-
-table, th, td {
-    border: 1px solid rgba(212, 212, 255, 0.035);
-}
-
-table {
-    width: 100%;
-    text-align: center;
-}
-
-tr:first-child {
-    background: rgba(125, 116, 176, 0.1);
-}
-
-tr:nth-child(even) {
-    background: rgba(42,47,74,0.3);
-}
-
-.inline {
-    display: inline-block;
-}
-
-.inline2 {
-    vertical-align: top;
-    display: inline-block;
-    padding-right: 5vh;
-    padding-top: 2vh;
 
 }
 
-h3 {
-    margin-top: 0;
-    font-size: 1.5em;
-}
-
-.sizing {
-    margin-bottom: 5vh;
-    border-bottom: 1px solid rgba(212, 212, 255, 0.035);
-    padding-bottom: 5vh;
-}
+        /* Fonts for icons configuration */
 
 .icon {
-    background-color: rgba(125, 116, 176, 0.1);
+    vertical-align: middle;
+    margin-right: 10px;
+    background-color: white;
     border-radius: 100%;
     height: 2.1em;
-    padding: 20px 20px 5px 20px;
-    margin-right: 1.5em;
+    width: 2.1em;
+    line-height: 2.1em;
     text-align: center;
+    margin-bottom: 15vh;
 }
 
-/*footer*/
-
-footer {
-    text-align: center;
-    background: #7d74b0;
-    color: white;
-    padding: 3vh;
+i {
+    color: green;
+    margin-top: 17.5px;
 }
 
-@media only screen and (min-width: 1000px) {
-    header {
-        position: sticky;
-        top: 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 2em;
-    }
-    .background nav a {
-        display: inline-block;
-        margin-left: 1.5em;
-        font-size: 1.2em;
-        padding-top: 0.6em;
-    }
-    .background nav a:hover {
-        text-decoration: underline;
-    }
-    .background nav a:first-child {
-        margin-left: 0;
-    }
-    .imga {
-        max-width: 200px;
-    }
-    .imgb {
-        min-height: 500px;
-    }
-    .wrapper {
+        /* Adding an flex */
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+        /* Responsive for Computer */
+
+@media only screen and (min-width: 900px){
+    .wraper {
+        max-width: 850px;
         margin: 0 auto;
-        width: 800px;
     }
-    .height {
-        padding: 20vh 0;
-    }
-    .border {
-        font-size: 1.5em;
-    }
-    section div p {
-        font-size: 0.8em;
-    }
-    .flex:nth-child(even) {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    .flex {
-        display: flex;
-        flex-direction: row;
-    }
-    .flex2 {
-        flex: 3;
-    }
-    .flex3 {
-        flex: 2;
-    }
-    .flex4 {
-        display: flex;
-    }
-    .flex5 {
-        flex: 1;
-    }
-    .retract {
-        padding-top: 190px;
-        padding-left: 40px;
-        font-size: 0.9em;
-    }
-    button:hover, input[type=submit]:hover, input[type=reset]:hover {
-        border: 2px solid rgb(151, 112, 176);
-        color: rgb(151, 112, 176);
-    }
-    textarea {
-        resize: vertical;
+    form {
+        border-radius: 5vh; 
     }
 }
