@@ -11,14 +11,11 @@
 </head>
 <body>
     <script>
-        var year = 12;
-        if(year%400 == 0){ 
-            document.write("kelemieji metai");
-        } else if(year % 100 === 0 || year % 4 === 0){
-            document.write("kelemieji metai");
-        } else {
-            document.write("nekelemieji metai");
-        }
+        'use strict';
+        const legalage = 20;
+        const age = 25;
+        let condition = (age < legalage) ? "Too young" : "old engouh";
+        document.write(condition);
     </script>
 </body>
 </html>
