@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <input type="text" id="temp">
+    <input type="submit" onclick="temperature()">
+    <p id="answer"></p>
+    <script>
+        function temperature(){
+            let num = document.getElementById("temp").value;
+            let guess = document.getElementById("answer");
+            if (num > 0 && num < 100) {
+                guess.innerHTML ="vanduo apacioje";
+            }
+            else if (num > 100) {
+                guess.innerHTML = "gerai";
+            }
+            else {
+                guess.innerHTML = "per zemai";
+            }
+        }    
+    </script>
+</body>
+</html>     

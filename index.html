@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <input id="horoskopas">
+    <input type="submit" onclick="horoscope()">
+    <p id="answer"></p>
+    <script>
+        function horoscope(){
+            var qhoro = document.getElementById("horoskopas").value;
+            let ahoro = document.getElementById("answer");
+            switch(qhoro){
+                case "avinas": ahoro.innerHTML = "Ryžtingas";
+                    break;
+                case "jautis": ahoro.innerHTML =  "Malonus";
+                    break;
+                case "dvyniai": ahoro.innerHTML =  "Permainingas";
+                    break;
+                case "vėžys": ahoro.innerHTML =  "Sumanumas";
+                    break;
+                case "liūtas": ahoro.innerHTML =  "Atsargus";
+                    break;
+                case "mergelė": ahoro.innerHTML =  "Gražus";
+                    break;
+                case "svarstyklės": ahoro.innerHTML =  "Emocionalus";
+                    break;
+                case "skorpionas": ahoro.innerHTML =  "Užsispyręs";
+                    break;
+                case "šaulys": ahoro.innerHTML =  "Dėmesingas";
+                    break;
+                case "ožiaragis": ;
+                case "vandenis": ;
+                case "žuvys": ahoro.innerHTML =  "Paslaptingas";
+                    break;
+                default : ahoro.innerHTML =  "blogai ivedete horoskopa";
+            }
+        }
+    </script>
+</body>
+</html>  

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <input type="text" id="fname">
+    <input type="text" id="lname">
+    <input type="number" id="phone">
+    <input type="submit" onclick="peoples()">
+    <p id="app"></p>
+    <!-- <p id="lnames"></p>
+    <p id="phones"></p> -->
+    <script>
+        function peoples(){
+            let firstname = document.getElementById("fname").value;
+            let lastname = document.getElementById("lname").value;
+            let telnr = document.getElementById("phone").value;
+            const app = document.getElementById("app");
+            app.innerHTML = firstname + lastname + telnr;
+            // document.getElementById("lnames").innerHTML = lastname;
+            // document.getElementById("phones").innerHTML = telnr;
+        }
+    </script>
+</body>
+</html>        
