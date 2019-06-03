@@ -1,0 +1,30 @@
+ 
+    /* Bar for images configurations */
+
+img {
+    width: 50px;
+}
+
+    /* Navigation Bar configuration */
+    
+.navi {
+    padding: 0 5px 0 ;
+}
+
+.navicolor {
+    background: rgb(228, 81, 28);
+}
+
+    /* Main 1st sections configuration */
+
+main {
+    background: rgb(83, 223, 146);
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+
