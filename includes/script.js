@@ -1,20 +1,23 @@
 'use strict';
-var sub = document.querySelector("input[type=submit]");
-sub.addEventListener("click", myname2);
-function myname(){
-    var fname = document.querySelector("input[type=number]").value;
-    var age = 0;
-    while(age < fname){
-        console.log("Vyte");
-        age++;
-    }
-    myname();
+let button = document.querySelector("input[type=submit]");
+button.addEventListener("click", fn);
+
+// function fnaq(){
+//     let num = 10;
+//     let guess;
+
+//     do{
+//         guess = prompt();
+//     } while(num != guess);
+//     alert("atspejai");
+// }
+
+function fn(){
+    let arr = [1, 2, 3, 4, 5];
+
+    arr.forEach(atspausdink);
 }
 
-function myname2(){
-    var fnamea = document.querySelector("input[type=number]").value;
-    var ageb = 0;
-    for (ageb = 0; ageb <fnamea; ageb++){
-        console.log("Petras");
-    }
+function atspausdink(v, i){
+    console.log(i + " " + v);
 }
