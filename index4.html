@@ -1,26 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Form</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="includes/normalise.css">
+    <link rel="stylesheet" type="text/css" href="includes/style.css">
+    <script src="includes/script.js" defer></script>
 </head>
 <body>
-    <div>
-        <label for="fname">Vardas:</label>
-        <input type="text" id="fname">
-        <input type="submit" onclick="as()" value="svyte">
-    </div>
-    <script>
-        function as(){
-        let x = document.querySelector("input[type=submit]");
-        if (x.value === "submit"){
-            x.value = "lol";
-        } else {
-           x.value = "submit";
-        }
-    }
-    </script>
+    <input type="text" id="one">
+    <input type="submit" value="accpet" onclick="cinemaprice()">
+    <div id="two"></div>
 </body>
 </html>

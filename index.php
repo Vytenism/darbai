@@ -1,26 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Form</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="includes/normalise.css">
+    <link rel="stylesheet" type="text/css" href="includes/style.css">
+    <script src="includes/script.js" defer></script>
 </head>
 <body>
-    <div class="mic">
-
-    </div>
-    <div class="mic">
-
-    </div>
-    <div class="mic">
-
-    </div>
-    <div class="mic">
-
-    </div>
-    <script>
-        var x = document.getElementsByClassName("mic");
-        console.log(x);
-    </script>
 </body>
 </html>
