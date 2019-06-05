@@ -1,23 +1,15 @@
 'use strict';
 let button = document.querySelector("input[type=submit]");
-button.addEventListener("click", fn);
+button.addEventListener("click", abc);
 
-// function fnaq(){
-//     let num = 10;
-//     let guess;
-
-//     do{
-//         guess = prompt();
-//     } while(num != guess);
-//     alert("atspejai");
-// }
-
-function fn(){
-    let arr = [1, 2, 3, 4, 5];
-
-    arr.forEach(atspausdink);
+function abc(){
+    var sk = document.getElementById("x");
+    sk = Number(sk.value);
+    for(let i = 0; i < sk; i++){
+        for(let o = 0; o <= i; o++){
+             document.write("*");
+        }
+        document.write("<br>");
+    }       
 }
 
-function atspausdink(v, i){
-    console.log(i + " " + v);
-}
