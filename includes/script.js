@@ -1,9 +1,9 @@
 'use strict';
 let button = document.querySelector("input[type=submit]");
-button.addEventListener("click", ab);
+button.addEventListener("click", gift);
 
-
-    let age = prompt("irasykite savo darbo stazo metus");
+function gift(){
+    let age = Number(document.querySelector("input[type=text]").value);
     if (0 <= age && age <= 10){
         document.querySelector("h1").innerHTML = "Jums priklauso 50 pound dovana";
     } else if (10 < age && age <= 20){
@@ -13,11 +13,12 @@ button.addEventListener("click", ab);
     } else {
         document.querySelector("h1").innerHTML = "Jus nedirbate kartu su mumis todel gaunate spyga taukuota :)";
     }
+}
 function ab(){
     let num = 10;
     let guess;
     do{
-        guess = prompt("atspek skaiciu");
+        guess = parseInt(prompt("atspek skaiciu"));
         if (guess !== num){
             alert("bandyk dar karta");
         }
