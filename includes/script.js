@@ -1,28 +1,33 @@
 'use strict';
-let button = document.querySelector("input[type=submit]");
-button.addEventListener("click", gift);
+let button = document.getElementById("triangle");
+let button2 = document.getElementById("piramid");
+// let button3 = document.getElementById("revpiramid");
+// let button4 = document.getElementById("clear");
 
-function gift(){
-    let age = Number(document.querySelector("input[type=text]").value);
-    if (0 <= age && age <= 10){
-        document.querySelector("h1").innerHTML = "Jums priklauso 50 pound dovana";
-    } else if (10 < age && age <= 20){
-        document.querySelector("h1").innerHTML = "Jums priklauso 50 pound + 50 puond dovana uz ilga bendradarbiavima";
-    } else if(age >= 21){
-        document.querySelector("h1").innerHTML = "Jus esat musu Herojus jus gaunate 50 pound + 100 pound dovanu uz geras akimirkas kartu";
-    } else {
-        document.querySelector("h1").innerHTML = "Jus nedirbate kartu su mumis todel gaunate spyga taukuota :)";
+button.addEventListener("click", triangle);
+button2.addEventListener("click", piramid);
+
+// button3.addEventListener("click", triangle);
+// button4.addEventListener("click", piramid);
+function triangle(){
+    var num = 7;
+    for (var i = 0; i <= num; i++){
+        for (var j = 0; j < i; j++){
+            document.write("*");
+        }
+        document.write("<br>");
     }
 }
-function ab(){
-    let num = 10;
-    let guess;
-    do{
-        guess = parseInt(prompt("atspek skaiciu"));
-        if (guess !== num){
-            alert("bandyk dar karta");
-        }
-    } while(guess != num);
 
-    alert("atspejai");
+function piramid(){
+    var numb = 70;
+    for (var i = 0; i < numb; i++){
+        for (let a = (2*numb - i); a >= i; a--){
+            document.write("&nbsp;");
+        }
+        for (var j = 1; j < 2*i; j++){
+            document.write("*");
+        }
+        document.write("<br>");
+    }
 }
