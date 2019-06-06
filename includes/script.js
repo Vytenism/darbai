@@ -1,49 +1,41 @@
 'use strict';
-var triangle = document.getElementById("triangle");
-var pyramid = document.getElementById("piramid");
-var revpyramid = document.getElementById("revpiramid");
-var clear = document.getElementById("clear");
-triangle.addEventListener("click", trianglea);
-pyramid.addEventListener("click", pyramida);
-revpyramid.addEventListener("click", reverse);
-clear.addEventListener("click", cleara);
 
-function trianglea(){
-    var num = 7;
-    for (var i = 0; i <= num; i++){
-        for (var j = 0; j < i; j++){
-            document.querySelector(".app").innerHTML += "*";
-        }
-        document.querySelector(".app").innerHTML += "<br>";
-    }
+function divide(x, y){
+    var divi = x / y;
+    document.querySelector(".ap1").innerHTML = divi;
+    return divi;
 }
 
-function pyramida(){
-    var num = 7;
-    for (var i = 0; i < num; i++){
-        for (var j = (2*num - i); j >= i; j--){
-            document.querySelector(".app").innerHTML += "&nbsp;";
-        }
-        for (var o = 1; o < 2*i; o++){
-            document.querySelector(".app").innerHTML += "*";
-        }
-        document.querySelector(".app").innerHTML += "<br>";
-    }
+divide(5, 2);
+
+function modulo(x, y){
+    var modu = x % y;
+    document.querySelector(".ap2").innerHTML = modu;
+    return modu;
 }
 
-function reverse(){
-    var num = 17;
-    for (var i = 0; i <= num; i++){
-        for (var j = 0; j <= (2*i + 1); j++){
-            document.querySelector(".app").innerHTML += "&nbsp;";
-        }
-        for (var o = 1; o <= (num - 2*i); o++){
-            document.querySelector(".app").innerHTML += "*";
-        }
-        document.querySelector(".app").innerHTML += "<br>";     
-    }
+modulo(50, 6);
+
+function multiplication(x, y){
+    var multi = x * y;
+    document.querySelector(".ap3").innerHTML = multi;
+    return multi;
 }
 
-function cleara(){
-    document.querySelector(".app").innerHTML = "";
+multiplication(2, 4);
+
+function sum(z, y){
+    var sums = z + y;
+    document.querySelector(".ap4").innerHTML = sums;
+    return sums;
 }
+
+sum(2, 5);
+
+function sub (z, y){
+    var subs = z - y;
+    document.querySelector(".ap5").innerHTML = subs;
+    return subs;
+}
+
+sub(3, 1);
