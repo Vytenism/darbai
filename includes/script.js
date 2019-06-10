@@ -1,41 +1,71 @@
 'use strict';
 
-function divide(x, y){
-    var divi = x / y;
-    document.querySelector(".ap1").innerHTML = divi;
-    return divi;
+var mathematic = Math.floor(Math.random() *15);
+console.log(mathematic);
+if (mathematic == 0){
+document.querySelector(".ap5").innerHTML = "Jus laimejote 3 bilietus";
+} else if (mathematic <= 1){
+    document.querySelector(".ap5").innerHTML = "Jus laimejote 2 bilietus";
+} else if (mathematic < 4){
+    document.querySelector(".ap5").innerHTML = "Jus laimejote 1 bilieta";
+} else {
+    document.querySelector(".ap5").innerHTML = "Deje, bandykit dar karta";
 }
 
-divide(5, 2);
-
-function modulo(x, y){
-    var modu = x % y;
-    document.querySelector(".ap2").innerHTML = modu;
-    return modu;
+switch(mathematic){
+    case 0 : ;
+    case 1 : ;
+    case 2 : ; 
+    case 3 : "Jus laimejote 1 bilieta";
+        break;
+    case 4 : ;
+    case 5 : "Jus laimejote 2 bilietus";
+        break;
+    case 6 : "Jus laimejote 3 bilietus";
+        break;
+    default : "Deje, bandykit dar karta";
 }
 
-modulo(50, 6);
+function random(N){
+    let rand = Math.floor(Math.random()*N + 1);
+    console.log(rand);
 
-function multiplication(x, y){
-    var multi = x * y;
-    document.querySelector(".ap3").innerHTML = multi;
-    return multi;
+    return rand;
 }
+function guessGame(){
+    let rand = random(5);
 
-multiplication(2, 4);
-
-function sum(z, y){
-    var sums = z + y;
-    document.querySelector(".ap4").innerHTML = sums;
-    return sums;
+    let text = "ivesk atsakyma";
+    do{
+        var guess = prompt(text);
+        if(guess < rand){
+            text = "per mazas ";
+        } else {
+            text = "per didelis";
+        }
+    }while (guess != rand);
+  alert("atspejai");
 }
+document.querySelector("input[type=submit]").addEventListener("click", guessGame);
+let text = "ivesk atsakyma:";
+do {
+   var guess = prompt(text);
+   text = "neatspejai";
+} while (guess != rand);
+ alert("atspejai");
 
-sum(2, 5);
+ do {
+    var guess = prompt("ivesk skaiciu");
+    text = "neatspejai";
+ } while (guess != rand);
+  alert("atspejai");
 
-function sub (z, y){
-    var subs = z - y;
-    document.querySelector(".ap5").innerHTML = subs;
-    return subs;
-}
+var who = {
+    name: "Vytenis",
+    sname: function(){alert("Mano vardas yra" + " " + who.name);}
+};
+document.write(who.sname);
 
-sub(3, 1);
+var anw = document.querySelector(".ap1");
+anw.innerHTML = document.write(who.name);
+who.sname();
