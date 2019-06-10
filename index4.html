@@ -9,15 +9,41 @@
     <script src="includes/script.js" defer></script>
 </head>
 <body>
-    <input type="submit" id="triangle" value="triangle">
-    <input type="submit" id="piramid" value="pyramid">
-    <input type="submit" id="revpiramid" value="revpyramid">
-    <input type="submit" id="clear" value="clear"> -->
-    <div class="ap1"></div>
-    <div class="ap2"></div> 
-    <div class="ap3"></div> 
-    <div class="ap4"></div> 
-    <div class="ap5"></div> 
-    <input type="submit">
+    <!-- <input type="submit"> -->
+    <script>
+        function solution(x) {
+            // i virsus
+            var a = " ";
+            for (let s = 0; s < x / 1.7; s++) {
+    for (let s = 0; s < x * 2; s++) {
+        a += "*";
+    }
+    a += "<br>";
+}
+            for (let s = 0; s <x; s++){
+                for (let s = 0; s < x ; s++){
+                    a += "&nbsp;";
+                    console.log(a);
+                }
+                for (let s = 0; s < x; s++){
+                    a += "*";
+                }
+                a += "<br>";
+            }
+            // i stuburas
+            for (let s = 0; s < x / 1.7; s++) {
+    for (let s = 0; s < x * 2; s++) {
+        a += "*";
+    }
+    a += "<br>";
+}
+
+
+            // apacia i raides
+    
+            return a;  
+        }     
+        document.write(solution(5));
+    </script>
 </body>
 </html>
