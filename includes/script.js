@@ -12,18 +12,20 @@ document.querySelector(".ap5").innerHTML = "Jus laimejote 3 bilietus";
     document.querySelector(".ap5").innerHTML = "Deje, bandykit dar karta";
 }
 
+
+
 switch(mathematic){
     case 0 : ;
     case 1 : ;
     case 2 : ; 
-    case 3 : "Jus laimejote 1 bilieta";
+    case 3 : document.querySelector(".ap1").innerHTML = "Jus laimejote 1 bilieta";
         break;
     case 4 : ;
-    case 5 : "Jus laimejote 2 bilietus";
+    case 5 : document.querySelector(".ap1").innerHTML = "Jus laimejote 2 bilietus";
         break;
-    case 6 : "Jus laimejote 3 bilietus";
+    case 6 : document.querySelector(".ap1").innerHTML = "Jus laimejote 3 bilietus";
         break;
-    default : "Deje, bandykit dar karta";
+    default : document.querySelector(".ap1").innerHTML = "Deje, bandykit dar karta";
 }
 
 function random(N){
