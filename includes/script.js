@@ -1,15 +1,20 @@
 'use strict';
 
+document.querySelector("input[type=submit]")
+.addEventListener("click", x);
 
-function solution(X) {
-    var a = " ";
-    for (let i = 0; i < X; i++) {
-        for(let s = 0; s < X-i; s++) {
-            a += "*";
-        }
-        a += "<br>";
+function fn(vardas, skc){ //funkcija x - (kuri atreturnina skc ir vardas)
+    for (let i = 0; i < skc; i++){ 
+        var block = document.createElement("h1");
+        document.body.append(block);
+        block.innerHTML = vardas; 
     }
-    return a;
+    return vardas;
 }
 
-document.write(solution(5));
+function x(){
+    var vardas = document.getElementById("vardas").value;
+    var skc = document.getElementById("skc").value;
+    fn(vardas, skc); // -siuncia i kita funkcija
+    return fn();
+}
