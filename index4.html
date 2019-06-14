@@ -7,10 +7,88 @@
     <link rel="stylesheet" type="text/css" href="includes/normalise.css">
     <link rel="stylesheet" type="text/css" href="includes/style.css">
     <script src="includes/script.js" defer></script>
+    <style>
+            table {
+                margin-top: 20px;
+            }
+            table, tr, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 10px 20px;
+            }
+        </style>
 </head>
 <body>
-    <input type="text" id="vardas">
-    <input type="number" id="skc">
-    <input type="submit">
+        <input type="number" id="nuo" placeholder="iveskite celciju">
+        <input type="number" id="iki" placeholder="iveskite farenheita">
+        <input type="submit" onclick="fn()">
+    <table>
+        <tr>
+            <th>Celcijai</th>
+            <th>Farenheitai</th> 
+        </tr>
+    </table>
+    <script>
+    function Inputs(namea, snamea){
+    let newtr = document.createElement("tr");
+    document.querySelector("table").append(newtr);
+    let newtd = document.createElement("td");
+    newtr.append(newtd);
+    newtd.prepend(document.createTextNode(namea));
+    let newtd2 = document.createElement("td");
+    newtr.append(newtd2);
+    newtd2.append(document.createTextNode(snamea));
+    }
+
+    function tables(){
+    var vardas = document.getElementById("names").value;
+    var pavarde = document.getElementById("snames").value;
+    Inputs(vardas, pavarde);
+    }    
+
+    function fn(){
+    var nuo = Number(document.getElementById("nuo").value);
+    var iki = Number(document.getElementById("iki").value);
+    myFunction(nuo, iki)
+}
+
+function myFunction(nuo, iki) {
+
+    for (let i = nuo; i <= iki; i++) {
+    var tras = document.createElement("tr");
+    document.querySelector("table").append(tras);
+    var tdas1 = document.createElement("td");
+    tras.append(tdas1);
+    tdas1.prepend(document.createTextNode(nuo));
+    var tdas2 = document.createElement("td");
+    tras.append(tdas2);
+    tdas2.append(document.createTextNode(iki));
+    tdas1 = i;
+    tdas2 = i * 1.8 +32;
+    }
+}   
+append(document.createTextNode(iki))
+prepend(document.createTextNode(nuo))
+
+function fn(){
+    var nuo = document.getElementById("nuo").value;
+    var iki = document.getElementById("iki").value;
+    myFunction(nuo, iki)
+}
+
+function myFunction(nuo, iki) {
+
+    for (let i = nuo; i <= iki; i++) {
+    var tras = document.createElement("tr");
+    document.querySelector("table").append(tras);
+        var tdas1 = document.createElement("td");
+        tras.append(tdas1);
+        var tdas2 = document.createElement("td");
+        tras.append(tdas2);
+        tdas1.innerHTML = i;
+        tdas2.innerHTML = i * 1.8 +32;
+    }
+}
+    </script>
 </body>
 </html>

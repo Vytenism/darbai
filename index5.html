@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="includes/normalise.css">
+    <link rel="stylesheet" type="text/css" href="includes/style.css">
+    <script src="includes/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <input type="text" placeholder="Full name" id="fname">
+        <input type="radio" name="radijus" value="top">Top
+        <input type="radio" name="radijus" value="bottum">Bottum
+        <input type="submit">
+    </header>
+    <main>
+        <table>
+            
+        </table>
+    </main>
+    <script>
+        
+
+function fn(D, S){
+   var x = S;
+    if (x == "one"){
+        var S = 1;
+    } else if (x == "two"){
+        var S = 2;
+    } else if (x == "three"){
+        var S = 3;
+    } else if (x == "four"){
+        var S = 4;
+    } else if (x == "five"){
+        var S = 5;
+    }
+    return D * S;
+}
+let a  = "!";
+function solution(s){
+    var c = s[0];
+    if(c.toUpperCase == c.toLowerCase){
+        return "other";
+    } else if (!isNaN(c)) {
+        return 'digit';
+    } else if (c.toUpperCase === c){
+        return 'upper';
+    } else if (c.toLowerCase === c){
+        return 'lower';
+    } else {
+        return "other";
+    }
+}
+document.write(solution(a));
+function check(name, surname, age){
+let vardas = name.slice(0,2);
+let pavarde = slice(0,2);
+return vardas + pavarde + age;
+}
+
+console.log(check("vytenis", "merkys", 30));
+
+let name = "Mon";
+let surname = 22222;
+
+document.write(solution(name, surname));
+
+function solution2(a, b) {
+    switch(a){
+        case "Mon": a = 1; break;
+        case "Tue": a = 2; break;
+        case "Wed": a = 3; break;
+        case "Thu": a = 4; break;
+        case "Fri": a = 5; break;
+        case "Sat": a = 6; break;
+        case "Sun": a = 7;
+    }
+    c = (a + b) % 7;
+    switch(c){
+        case 1: c = "Mon"; break;
+        case 2: c = "Tue"; break;
+        case 3: c = "Wed"; break;
+        case 4: c = "Thu"; break;
+        case 5: c = "Fri"; break;
+        case 6: c = "Sat"; break;
+        case 7: c = "Sun";
+    }
+}
+let name = "Tue";
+let surname = 1;
+
+document.write(solution(name, surname));
+
+function solution3(a, b){
+    let arr = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+    let c = arr.indexOf(a) + 1;
+    return (b + c) % 7;
+}
+    </script>
+</body>
+</html>

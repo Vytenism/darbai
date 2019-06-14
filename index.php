@@ -9,5 +9,7 @@
     <script src="includes/script.js" defer></script>
 </head>
 <body>
+    <script>
+        </script>
 </body>
 </html>
