@@ -1,0 +1,129 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(238, 234, 234);
+    padding: 20px;
+}
+
+header nav a {
+    display: block;
+    padding: 20px;
+    color: rgb(87, 159, 226);
+}
+
+header nav a:not(last-child){
+    border-bottom: 1px solid rgb(241, 241, 241);
+}
+
+header nav  {
+    border-radius: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+header div {
+    text-align: center;
+}
+
+header div img {
+    width: 80%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+main div section, main section{
+    padding: 20px;
+}
+
+main section:first-child {
+    border-radius: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    min-height: 200px;
+    margin-bottom: 20px;
+}
+
+.none {
+    display: none;
+    margin-bottom: 20px;
+    
+}
+
+main section:last-child {
+    border-radius: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    min-height: 400px;
+    margin-bottom: 20px;
+}
+
+main section h3, main section p, main section h2{
+  
+}
+
+footer {
+    text-align: center;
+    color: rgb(170, 170, 170);
+    margin: 10px 0;
+}
+
+@media only screen and (min-width: 900px){
+    .wrapper {
+        max-width: 960px;
+        margin: 0 auto;   
+    }
+
+    .wrapper div img{
+        width: 30%;
+        margin: 20px 0;
+    }
+
+    .wrapper div {
+        text-align: left;
+    }
+    .wrapper nav a:hover {
+        text-decoration: underline;
+        color: black;
+    }
+    .config nav a{
+        display: inline-block;
+        text-decoration: none;
+    }
+    main section:first-child{
+        border-radius: 10px;
+        padding: 20px;
+        background-color: white;
+        box-sizing: border-box;
+        min-height: 200px;
+    }
+    main section:last-child {
+        border-radius: 10px;
+        padding: 20px;
+        background-color: white;
+        box-sizing: border-box;
+        min-height: 400px;
+        max-height: 100%;
+        text-align: justify
+    }
+
+    main section:nth-child(2){
+        display: block;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: white;
+        box-sizing: border-box;
+        min-height: 200px;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .flex2 {
+        flex: 2;
+        margin-right: 20px;
+    }
+    .flex3 {
+        flex: 3;
+    }
+}
